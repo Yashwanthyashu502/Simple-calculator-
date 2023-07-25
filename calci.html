@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="calci2.css">
+    <script src="calculator.js"></script>
+</head>
+<body>
+    <h1 class="simple">Simple calculator</h1>
+    <div id="main" class="classic">
+            <form name="f">
+                <input type="text" name="d" placeholder="0" id="e"><br>
+                <input type="button" value="1" onclick="f.d.value+=1">
+                <input type="button" value="2" onclick="f.d.value+=2">
+                <input type="button" value="3" onclick="f.d.value+=3">
+                <input type="button" value="+" onclick="add()"><br>
+                <input type="button" value="4" onclick="f.d.value+=4">
+                <input type="button" value="5" onclick="f.d.value+=5">
+                <input type="button" value="6" onclick="f.d.value+=6">
+                <input type="button" value="-" onclick="sub()"><br>
+                <input type="button" value="7" onclick="f.d.value+=7">
+                <input type="button" value="8" onclick="f.d.value+=8">
+                <input type="button" value="9" onclick="f.d.value+=9">
+                <input type="button" value="/" onclick="div()"><br>
+                <input type="button" value="C" onclick="f.d.value=''">
+                <input type="button" value="0" onclick="f.d.value+=0">
+                <input type="button" value="=" onclick="f.d.value=eval(f.d.value)">
+                <input type="button" value="x" onclick="mul()"><br>
+            </form> 
+    </div>
+
+</body>
+</html>
